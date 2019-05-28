@@ -1,0 +1,42 @@
+@mixin overlay()
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  background: rgba(0,0,0,0.4)
+
+@mixin generalTextBox()
+  h2
+    margin: 0
+    a
+      color: #fff
+      font-size: 1rem
+  p
+    font-size: .9rem
+
+@mixin link() 
+  text-transform: uppercase
+  color: $purple
+  font-size: .9rem
+
+@mixin pseudo($display: block, $pos: absolute, $content: '', $top:0)
+  content: $content
+  display: $display
+  position: $pos
+  top: $top
+
+@mixin fontawsome()
+  font-family: 'Font Awesome 5 Free'
+  font-weight: 900
+
+
+@mixin absolute-center()
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  
+  
